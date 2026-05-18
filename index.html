@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Oliveira Gomes — Desenvolvedor em Formação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="progress-bar"></div>
+
+    <div id="page-loader" style="position:fixed;inset:0;background:#1C1C1C;z-index:10000;display:flex;align-items:center;justify-content:center;transition:opacity 0.5s ease,visibility 0.5s ease;">
+        <div style="text-align:center;">
+            <div style="font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,56px);font-weight:900;letter-spacing:-0.03em;color:#ffffff;">LOG</div>
+            <div style="margin-top:24px;width:160px;height:2px;background:#3a2226;overflow:hidden;">
+                <div style="height:100%;width:0%;background:#800020;animation:loadBar 1s ease 0.2s forwards;"></div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @keyframes loadBar { to { width: 100%; } }
+        #page-loader.hidden { opacity: 0; visibility: hidden; }
+    </style>
+
+    <nav id="navbar">
+        <a href="#" class="nav-logo">Lucas Oliveira Gomes</a>
+        <ul class="nav-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a href="/cv-lucas-oliveira-gomes.pdf" download="CV-Lucas-Oliveira-Gomes.pdf" class="nav-cta">Download CV</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-bg-number" aria-hidden="true">LOG</div>
+        <div class="hero-inner">
+            <h1 class="hero-name">
+                <span class="word">Lucas</span>
+                <span class="word">Oliveira</span>
+                <span class="word">Gomes</span>
+            </h1>
+            <div class="hero-bottom">
+                <div>
+                    <p class="hero-role">
+                        Desenvolvedor em Formação<br>
+                        Estagiário de TI · Aprendiz
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#experiencia" class="btn-primary">Ver Experiência →</a>
+                        <a href="#contato" class="btn-outline">Entre em Contato</a>
+                    </div>
+                </div>
+                <div class="hero-divider"></div>
+                <p class="hero-desc">Estudante de Ciência da Computação com experiência prática em desenvolvimento web. Orientado a soluções, disciplinado e com forte capacidade de aprendizado. Buscando oportunidade como Estagiário ou Aprendiz de TI.</p>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+
+    <main class="main-content">
+
+        <section class="section" id="sobre">
+            <div class="section-header reveal">
+                <span class="section-num">01</span>
+                <h2 class="section-title">Objetivo Profissional</h2>
+            </div>
+            <div class="sobre-block reveal">
+                <p class="sobre-label">Resumo</p>
+                <p class="sobre-text">Estudante de Ciência da Computação na ENIAC com experiência prática em desenvolvimento web e foco na resolução de problemas. Possuo conhecimento em diversas linguagens de programação e busco uma oportunidade como Estagiário ou Aprendiz nas áreas de TI, Logística ou Administração. Sou um profissional disciplinado, proativo e com alta capacidade de aprendizado, pronto para contribuir com a inovação e a eficiência dos processos tecnológicos da empresa.</p>
+            </div>
+            <div class="info-row stagger-children">
+                <div class="info-cell">
+                    <p class="info-cell-label">Localização</p>
+                    <p class="info-cell-value">Guarulhos Gopoúva, SP</p>
+                </div>
+                <div class="info-cell">
+                    <p class="info-cell-label">Disponibilidade</p>
+                    <p class="info-cell-value">07:00 as 20:00</p>
+                </div>
+                <div class="info-cell">
+                    <p class="info-cell-label">Idiomas</p>
+                    <p class="info-cell-value">Português · Inglês básico</p>
+                </div>
+                <div class="info-cell">
+                    <p class="info-cell-label">GitHub</p>
+                    <p class="info-cell-value">LucasOG2008</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="habilidades">
+            <div class="section-header reveal">
+                <span class="section-num">02</span>
+                <h2 class="section-title">Habilidades Técnicas</h2>
+            </div>
+            <table class="skills-table reveal">
+                <tr>
+                    <td class="col-label">Linguagens</td>
+                    <td>
+                        <div class="skill-pills">
+                            <div class="skill-img-pill">
+                                <div class="skill-img-box">
+                                    <img src="icons/csharp.png" alt="C#">
+                                </div>
+                                <span class="skill-img-label">C#</span>
+                            </div>
+                            <div class="skill-img-pill">
+                                <div class="skill-img-box">
+                                    <img src="icons/python.png" alt="Python">
+                                </div>
+                                <span class="skill-img-label">Python</span>
+                            </div>
+                            <div class="skill-img-pill">
+                                <div class="skill-img-box">
+                                    <img src="icons/javascript.png" alt="JavaScript">
+                                </div>
+                                <span class="skill-img-label">JavaScript</span>
+                            </div>
+                            <div class="skill-img-pill">
+                                <div class="skill-img-box">
+                                    <img src="icons/html.png" alt="HTML">
+                                </div>
+                                <span class="skill-img-label">HTML</span>
+                            </div>
+                            <div class="skill-img-pill">
+                                <div class="skill-img-box">
+                                    <img src="icons/css.png" alt="CSS">
+                                </div>
+                                <span class="skill-img-label">CSS</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label">Banco de Dados</td>
+                    <td>
+                        <div class="skill-pills">
+                            <div class="skill-img-pill">
+                                <div class="skill-img-box">
+                                    <img src="icons/mysql.png" alt="MySQL">
+                                </div>
+                                <span class="skill-img-label">MySQL</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label">Frameworks & Libs</td>
+                    <td>
+                        <div class="skill-pills">
+                            <div class="skill-img-pill">
+                                <div class="skill-img-box">
+                                    <img src="icons/flask.png" alt="Flask">
+                                </div>
+                                <span class="skill-img-label">Flask</span>
+                            </div>
+                            <div class="skill-img-pill">
+                                <div class="skill-img-box">
+                                    <img src="icons/unity.png" alt="Unity">
+                                </div>
+                                <span class="skill-img-label">Unity</span>
+                            </div>
+                            <div class="skill-img-pill">
+                                <div class="skill-img-box">
+                                    <img src="icons/restapi.png" alt="REST API">
+                                </div>
+                                <span class="skill-img-label">REST APIs</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label">Ferramentas</td>
+                    <td>
+                        <div class="skill-pills">
+                            <div class="skill-img-pill">
+                                <div class="skill-img-box">
+                                    <img src="icons/excel.png" alt="Excel">
+                                </div>
+                                <span class="skill-img-label">Excel</span>
+                            </div>
+                            <div class="skill-img-pill">
+                                <div class="skill-img-box">
+                                    <img src="icons/word.png" alt="Word">
+                                </div>
+                                <span class="skill-img-label">Word</span>
+                            </div>
+                            <div class="skill-img-pill">
+                                <div class="skill-img-box">
+                                    <img src="icons/canva.png" alt="Canva">
+                                </div>
+                                <span class="skill-img-label">Canva</span>
+                            </div>
+                            <div class="skill-img-pill">
+                                <div class="skill-img-box">
+                                    <img src="icons/mysqlwb.png" alt="MySQL Workbench">
+                                </div>
+                                <span class="skill-img-label">MySQL WB</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label">Em aprendizado</td>
+                    <td>
+                        <div class="skill-pills">
+                            <div class="skill-img-pill">
+                                <div class="skill-img-box">
+                                    <img src="icons/react.png" alt="React">
+                                </div>
+                                <span class="skill-img-label">React</span>
+                            </div>
+                            <div class="skill-img-pill">
+                                <div class="skill-img-box">
+                                    <img src="icons/nodejs.png" alt="Node.js">
+                                </div>
+                                <span class="skill-img-label">Node.js</span>
+                            </div>
+                            <div class="skill-img-pill">
+                                <div class="skill-img-box">
+                                    <img src="icons/git.png" alt="Git">
+                                </div>
+                                <span class="skill-img-label">Git</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label">Soft Skills</td>
+                    <td>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Comunicação clara</span>
+                            <span class="skill-pill">Trabalho em equipe</span>
+                            <span class="skill-pill">Autocontrole</span>
+                            <span class="skill-pill">Comprometimento</span>
+                            <span class="skill-pill">Raciocínio lógico</span>
+                            <span class="skill-pill">Liderança</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="section" id="formacao">
+            <div class="section-header reveal">
+                <span class="section-num">03</span>
+                <h2 class="section-title">Formação Acadêmica</h2>
+            </div>
+            <div class="timeline-list">
+                <div class="timeline-entry reveal">
+                    <div class="timeline-left">
+                        <p class="timeline-year">Em andamento</p>
+                        <p class="timeline-institution">Centro Universitário<br>ENIAC</p>
+                    </div>
+                    <div>
+                        <h3 class="timeline-title">Bacharelado em Ciência da Computação</h3>
+                        <p class="timeline-sub">Graduação · Presencial</p>
+                        <p class="timeline-desc">Formação superior em computação, abrangendo algoritmos, estruturas de dados, engenharia de software e desenvolvimento de sistemas.</p>
+                    </div>
+                </div>
+                <div class="timeline-entry reveal">
+                    <div class="timeline-left">
+                        <p class="timeline-year">Concluído</p>
+                        <p class="timeline-institution">E.E. Frederico De<br>Barros Brotero</p>
+                    </div>
+                    <div>
+                        <h3 class="timeline-title">Ensino Médio Técnico em Desenvolvimento de Sistemas</h3>
+                        <p class="timeline-sub">Técnico · Guarulhos, SP</p>
+                        <p class="timeline-desc">Formação técnica em programação, banco de dados, desenvolvimento web e lógica de sistemas. Eleito líder do projeto de TCC da turma.</p>
+                    </div>
+                </div>
+                <div class="timeline-entry reveal">
+                    <div class="timeline-left">
+                        <p class="timeline-year">Concluído</p>
+                        <p class="timeline-institution">SENAC</p>
+                    </div>
+                    <div>
+                        <h3 class="timeline-title">Curso de Desenvolvimento de Jogos com Unity</h3>
+                        <p class="timeline-sub">Extensão · Certificado</p>
+                        <p class="timeline-desc">Desenvolvimento de jogos 2D e 3D com Unity Engine e C#. Primeiro contato com programação orientada a componentes e game design.</p>
+                    </div>
+                </div>
+                <div class="timeline-entry reveal">
+                    <div class="timeline-left">
+                        <p class="timeline-year">Concluído</p>
+                        <p class="timeline-institution">Bradesco</p>
+                    </div>
+                    <div>
+                        <h3 class="timeline-title">Curso de Office na Prática</h3>
+                        <p class="timeline-sub">Extensão · Certificado</p>
+                        <p class="timeline-desc">Domínio do pacote Microsoft Office com foco em Word, Excel e apresentações profissionais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experiencia">
+            <div class="section-header reveal">
+                <span class="section-num">04</span>
+                <h2 class="section-title">Experiência Profissional</h2>
+            </div>
+            <div class="timeline-list">
+                <div class="timeline-entry reveal">
+                    <div class="timeline-left">
+                        <p class="timeline-year">Recente</p>
+                        <p class="timeline-institution">StudioMC<br>Guarulhos, SP</p>
+                    </div>
+                    <div>
+                        <h3 class="timeline-title">Estagiário — Logística</h3>
+                        <p class="timeline-sub">Estágio · Guarulhos, SP</p>
+                        <ul class="timeline-bullets">
+                            <li>Otimização de Fluxo: Estruturei do zero um sistema de organização logística com controle em planilhas digitais.</li>
+                            <li>Gestão de Estoque: Responsável pela conferência, controle de reposição e monitoramento rigoroso de validades.</li>
+                            <li>Liderança de Equipe: Coordenei atividades operacionais e direcionei tarefas de colaboradores do setor.</li>
+                            <li>Suporte Operacional: Manutenção da organização geral e apoio administrativo no controle de inventário.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-entry reveal">
+                    <div class="timeline-left">
+                        <p class="timeline-year">Anterior</p>
+                        <p class="timeline-institution">Promofarma<br>Guarulhos, SP</p>
+                    </div>
+                    <div>
+                        <h3 class="timeline-title">Jovem Aprendiz</h3>
+                        <p class="timeline-sub">Aprendizagem Profissional · Guarulhos, SP</p>
+                        <ul class="timeline-bullets">
+                            <li>Controle e reposição de estoque, garantindo disponibilidade dos produtos.</li>
+                            <li>Organização e padronização de gôndolas, melhorando a experiência do cliente.</li>
+                            <li>Verificação de validade e gestão de produtos próximos ao vencimento.</li>
+                            <li>Suporte operacional e manutenção da organização do setor.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projetos">
+            <div class="section-header reveal">
+                <span class="section-num">05</span>
+                <h2 class="section-title">Projeto em Destaque</h2>
+            </div>
+            <div class="project-single reveal">
+                <div>
+                    <p class="project-tag">Estúdio Indie · Em desenvolvimento</p>
+                    <h3 class="project-title">Infortunio</h3>
+                    <p class="project-desc">Site oficial do primeiro jogo desenvolvido pelo nosso estúdio independente. Apresenta a narrativa, equipe de desenvolvimento e atualizações do projeto. Desenvolvido com Python/Flask e HTML/CSS puro, integrando o jogo em Unity.</p>
+                    <div class="project-techs">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">HTML / CSS</span>
+                        <span class="tech-tag">Unity Engine</span>
+                        <span class="tech-tag">C#</span>
+                    </div>
+                </div>
+                <a href="https://vanguardaprj.pythonanywhere.com" target="_blank" class="project-link">Ver site →</a>
+            </div>
+            <br>
+            <div class="project-single reveal">
+                <div>
+                    <p class="project-tag">Estagio Eniac · Em desenvolvimento</p>
+                    <h3 class="project-title">Evolua+</h3>
+                    <p class="project-desc">Participei do desenvolvimento do Evolua+, uma plataforma web em HTML, CSS, Node.js e MySQL voltada à saúde mental corporativa, que conecta colaboradores a psicólogos de forma segura e organizada. No sistema, o usuário passa por uma triagem com formulários e desafios reflexivos para gerar um perfil anônimo, permitindo que profissionais demonstrem interesse no atendimento e iniciem o acompanhamento custeado pela empresa. Além da conexão entre as partes, a solução conta com um sistema de validação e pontuação por tarefas, incentivando o engajamento dos funcionários e facilitando a gestão do bem-estar no ambiente de trabalho.</p>
+                    <div class="project-techs">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">HTML / CSS</span>
+                        <span class="tech-tag">XAMPP</span>
+                    </div>
+                </div>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7447767486810472448/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFjRrPUBtN-xev0hVY07RDfky2w3O-JH9kE" target="_blank" class="project-link">Ver projeto →</a>
+            </div>
+        </section>
+
+        <section class="section" id="contato">
+            <div class="section-header reveal">
+                <span class="section-num">06</span>
+                <h2 class="section-title">Contato</h2>
+            </div>
+            <div class="contact-grid reveal">
+                <div class="contact-item">
+                    <div>
+                        <p class="contact-label">E-mail</p>
+                        <p class="contact-value">lucasogomes2020@gmail.com</p>
+                    </div>
+                    <button class="copy-btn" data-text="lucasogomes2020@gmail.com">Copiar</button>
+                </div>
+                <div class="contact-item">
+                    <div>
+                        <p class="contact-label">WhatsApp</p>
+                        <p class="contact-value">+55 11 93250-9465</p>
+                    </div>
+                    <button class="copy-btn" data-text="+55 11 93250-9465">Copiar</button>
+                </div>
+            </div>
+            <div class="social-links reveal">
+                <a href="https://www.linkedin.com/in/lucas-oliveira-gomes-499063357" target="_blank" class="social-link">
+                    <div class="social-link-left">
+                        <span class="social-platform">LinkedIn</span>
+                        <span class="social-handle">lucas-oliveira-gomes</span>
+                    </div>
+                    <span class="social-arrow">↗</span>
+                </a>
+                <a href="https://github.com/LucasOG2008" target="_blank" class="social-link">
+                    <div class="social-link-left">
+                        <span class="social-platform">GitHub</span>
+                        <span class="social-handle">LucasOG2008</span>
+                    </div>
+                    <span class="social-arrow">↗</span>
+                </a>
+                <a href="https://www.instagram.com/lucasgomes2008" target="_blank" class="social-link">
+                    <div class="social-link-left">
+                        <span class="social-platform">Instagram</span>
+                        <span class="social-handle">@lucasgomes2008</span>
+                    </div>
+                    <span class="social-arrow">↗</span>
+                </a>
+            </div>
+
+            <div class="contact-form-wrap reveal">
+                <h3 class="contact-form-title">Envie uma mensagem</h3>
+                <p class="contact-form-subtitle">Responderei em até 24 horas · direto no seu e-mail</p>
+                <form id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="from_name">Nome completo</label>
+                            <input class="form-input" type="text" id="from_name" name="from_name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="from_email">E-mail</label>
+                            <input class="form-input" type="email" id="from_email" name="from_email" placeholder="seu@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="subject">Assunto</label>
+                        <input class="form-input" type="text" id="subject" name="subject" placeholder="Ex: Proposta de estágio, Parceria..." required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message">Mensagem</label>
+                        <textarea class="form-textarea" id="message" name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                    </div>
+                    <div class="form-bottom">
+                        <span class="form-note">Seus dados não serão compartilhados.</span>
+                        <button type="submit" class="form-submit" id="submitBtn">
+                            <div class="spinner"></div>
+                            <span class="btn-text">Enviar mensagem →</span>
+                        </button>
+                    </div>
+                </form>
+                <div class="form-feedback" id="formFeedback"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <span class="footer-name">Lucas Oliveira Gomes</span>
+        <span class="footer-meta">Guarulhos, SP — Brasil · 2026</span>
+    </footer>
+
+    <a href="#" class="scroll-top" id="scrollTop">↑</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html
