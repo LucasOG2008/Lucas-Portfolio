@@ -9,16 +9,6 @@
 <body>
 
     <div id="progress-bar"></div>
-
-    <div id="page-loader" style="position:fixed;inset:0;background:#1C1C1C;z-index:10000;display:flex;align-items:center;justify-content:center;transition:opacity 0.5s ease,visibility 0.5s ease;">
-        <div style="text-align:center;">
-            <div style="font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,56px);font-weight:900;letter-spacing:-0.03em;color:#ffffff;">LOG</div>
-            <div style="margin-top:24px;width:160px;height:2px;background:#3a2226;overflow:hidden;">
-                <div style="height:100%;width:0%;background:#800020;animation:loadBar 1s ease 0.2s forwards;"></div>
-            </div>
-        </div>
-    </div>
-
     <style>
         @keyframes loadBar { to { width: 100%; } }
         #page-loader.hidden { opacity: 0; visibility: hidden; }
@@ -37,7 +27,10 @@
     </nav>
 
     <section class="hero">
-        <div class="hero-bg-number" aria-hidden="true">LOG</div>
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="mount-fuji-sunset-moewalls-com.mp4" type="video/mp4">
+            <source src="SEU_VIDEO.webm" type="video/webm">
+        </video>
         <div class="hero-inner">
             <h1 class="hero-name">
                 <span class="word">Lucas</span>
@@ -55,14 +48,12 @@
                         <a href="#contato" class="btn-outline">Entre em Contato</a>
                     </div>
                 </div>
-                <div class="hero-divider"></div>
                 <p class="hero-desc">Estudante de Ciência da Computação com experiência prática em desenvolvimento web. Orientado a soluções, disciplinado e com forte capacidade de aprendizado. Buscando oportunidade como Estagiário ou Aprendiz de TI.</p>
             </div>
         </div>
     </section>
 
-    <br>
-    <br>
+    <br><br>
 
     <main class="main-content">
 
@@ -105,36 +96,11 @@
                     <td class="col-label">Linguagens</td>
                     <td>
                         <div class="skill-pills">
-                            <div class="skill-img-pill">
-                                <div class="skill-img-box">
-                                    <img src="icons/csharp.png" alt="C#">
-                                </div>
-                                <span class="skill-img-label">C#</span>
-                            </div>
-                            <div class="skill-img-pill">
-                                <div class="skill-img-box">
-                                    <img src="icons/python.png" alt="Python">
-                                </div>
-                                <span class="skill-img-label">Python</span>
-                            </div>
-                            <div class="skill-img-pill">
-                                <div class="skill-img-box">
-                                    <img src="icons/javascript.png" alt="JavaScript">
-                                </div>
-                                <span class="skill-img-label">JavaScript</span>
-                            </div>
-                            <div class="skill-img-pill">
-                                <div class="skill-img-box">
-                                    <img src="icons/html.png" alt="HTML">
-                                </div>
-                                <span class="skill-img-label">HTML</span>
-                            </div>
-                            <div class="skill-img-pill">
-                                <div class="skill-img-box">
-                                    <img src="icons/css.png" alt="CSS">
-                                </div>
-                                <span class="skill-img-label">CSS</span>
-                            </div>
+                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Csharp.png" alt="C#"></div><span class="skill-img-label">C#</span></div>
+                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Python.png" alt="Python"></div><span class="skill-img-label">Python</span></div>
+                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/JS.png" alt="JavaScript"></div><span class="skill-img-label">JavaScript</span></div>
+                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Html.png" alt="HTML"></div><span class="skill-img-label">HTML</span></div>
+                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/CSS.png" alt="CSS"></div><span class="skill-img-label">CSS</span></div>
                         </div>
                     </td>
                 </tr>
@@ -142,12 +108,7 @@
                     <td class="col-label">Banco de Dados</td>
                     <td>
                         <div class="skill-pills">
-                            <div class="skill-img-pill">
-                                <div class="skill-img-box">
-                                    <img src="icons/mysql.png" alt="MySQL">
-                                </div>
-                                <span class="skill-img-label">MySQL</span>
-                            </div>
+                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/MySQL.png" alt="MySQL"></div><span class="skill-img-label">MySQL</span></div>
                         </div>
                     </td>
                 </tr>
@@ -155,24 +116,8 @@
                     <td class="col-label">Frameworks & Libs</td>
                     <td>
                         <div class="skill-pills">
-                            <div class="skill-img-pill">
-                                <div class="skill-img-box">
-                                    <img src="icons/flask.png" alt="Flask">
-                                </div>
-                                <span class="skill-img-label">Flask</span>
-                            </div>
-                            <div class="skill-img-pill">
-                                <div class="skill-img-box">
-                                    <img src="icons/unity.png" alt="Unity">
-                                </div>
-                                <span class="skill-img-label">Unity</span>
-                            </div>
-                            <div class="skill-img-pill">
-                                <div class="skill-img-box">
-                                    <img src="icons/restapi.png" alt="REST API">
-                                </div>
-                                <span class="skill-img-label">REST APIs</span>
-                            </div>
+                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Flask.png" alt="Flask"></div><span class="skill-img-label">Flask</span></div>
+                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Unity.png" alt="Unity"></div><span class="skill-img-label">Unity</span></div>
                         </div>
                     </td>
                 </tr>
@@ -180,30 +125,9 @@
                     <td class="col-label">Ferramentas</td>
                     <td>
                         <div class="skill-pills">
-                            <div class="skill-img-pill">
-                                <div class="skill-img-box">
-                                    <img src="icons/excel.png" alt="Excel">
-                                </div>
-                                <span class="skill-img-label">Excel</span>
-                            </div>
-                            <div class="skill-img-pill">
-                                <div class="skill-img-box">
-                                    <img src="icons/word.png" alt="Word">
-                                </div>
-                                <span class="skill-img-label">Word</span>
-                            </div>
-                            <div class="skill-img-pill">
-                                <div class="skill-img-box">
-                                    <img src="icons/canva.png" alt="Canva">
-                                </div>
-                                <span class="skill-img-label">Canva</span>
-                            </div>
-                            <div class="skill-img-pill">
-                                <div class="skill-img-box">
-                                    <img src="icons/mysqlwb.png" alt="MySQL Workbench">
-                                </div>
-                                <span class="skill-img-label">MySQL WB</span>
-                            </div>
+                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Excel.png" alt="Excel"></div><span class="skill-img-label">Excel</span></div>
+                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Word.png" alt="Word"></div><span class="skill-img-label">Word</span></div>
+                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Canva.png" alt="Canva"></div><span class="skill-img-label">Canva</span></div>
                         </div>
                     </td>
                 </tr>
@@ -211,24 +135,8 @@
                     <td class="col-label">Em aprendizado</td>
                     <td>
                         <div class="skill-pills">
-                            <div class="skill-img-pill">
-                                <div class="skill-img-box">
-                                    <img src="icons/react.png" alt="React">
-                                </div>
-                                <span class="skill-img-label">React</span>
-                            </div>
-                            <div class="skill-img-pill">
-                                <div class="skill-img-box">
-                                    <img src="icons/nodejs.png" alt="Node.js">
-                                </div>
-                                <span class="skill-img-label">Node.js</span>
-                            </div>
-                            <div class="skill-img-pill">
-                                <div class="skill-img-box">
-                                    <img src="icons/git.png" alt="Git">
-                                </div>
-                                <span class="skill-img-label">Git</span>
-                            </div>
+                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/NodeJS.png" alt="Node.js"></div><span class="skill-img-label">Node.js</span></div>
+                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Git.png" alt="Git"></div><span class="skill-img-label">Git</span></div>
                         </div>
                     </td>
                 </tr>
@@ -461,8 +369,51 @@
     </main>
 
     <footer>
-        <span class="footer-name">Lucas Oliveira Gomes</span>
-        <span class="footer-meta">Guarulhos, SP — Brasil · 2026</span>
+        <div class="footer-main">
+            <div>
+                <span class="footer-brand-name">Lucas Oliveira Gomes</span>
+                <span class="footer-brand-tagline">
+                    Desenvolvedor em Formação<br>
+                    Guarulhos, SP · Brasil
+                </span>
+                <span class="footer-kanji">開発者</span>
+            </div>
+            <div>
+                <p class="footer-col-title">Navegação</p>
+                <ul class="footer-links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer-col-title">Contato</p>
+                <div class="footer-contact-item">
+                    <p class="footer-contact-label">E-mail</p>
+                    <p class="footer-contact-val">lucasogomes2020@gmail.com</p>
+                </div>
+                <div class="footer-contact-item">
+                    <p class="footer-contact-label">WhatsApp</p>
+                    <p class="footer-contact-val">+55 11 93250-9465</p>
+                </div>
+                <div class="footer-contact-item">
+                    <p class="footer-contact-label">GitHub</p>
+                    <p class="footer-contact-val">LucasOG2008</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="footer-copy">© 2026 Lucas Oliveira Gomes · Todos os direitos reservados</span>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/lucas-oliveira-gomes-499063357" target="_blank">LinkedIn</a>
+                <a href="https://github.com/LucasOG2008" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/lucasgomes2008" target="_blank">Instagram</a>
+            </div>
+            <span class="footer-made">Feito com HTML · CSS · JS</span>
+        </div>
     </footer>
 
     <a href="#" class="scroll-top" id="scrollTop">↑</a>
@@ -470,4 +421,4 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
-</html
+</html>
