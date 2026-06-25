@@ -4,51 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Oliveira Gomes — Desenvolvedor em Formação</title>
+
+    <meta name="description" content="Portfólio de Lucas Oliveira Gomes — estudante de Ciência da Computação com experiência prática em desenvolvimento web. Buscando oportunidade como Estagiário ou Aprendiz de TI em Guarulhos, SP.">
+    <meta name="author" content="Lucas Oliveira Gomes">
+    <meta name="keywords" content="Lucas Oliveira Gomes, desenvolvedor, estágio TI, Ciência da Computação, Python, JavaScript, C#, portfólio, Guarulhos">
+    <meta name="theme-color" content="#5a7a5a">
+    <link rel="canonical" href="https://lucasog2008.github.io/">
+
+    <!-- Open Graph / redes sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lucas Oliveira Gomes — Desenvolvedor em Formação">
+    <meta property="og:description" content="Estudante de Ciência da Computação com experiência prática em desenvolvimento web. Buscando oportunidade como Estagiário ou Aprendiz de TI.">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lucas Oliveira Gomes — Desenvolvedor em Formação">
+    <meta name="twitter:description" content="Estudante de Ciência da Computação com experiência prática em desenvolvimento web.">
+
+    <!-- Favicon (SVG inline — kanji 開 'desenvolver/abrir', acento laranja do site) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23ffffff'/%3E%3Ctext x='50' y='52' font-family='serif' font-size='62' font-weight='900' fill='%235a7a5a' text-anchor='middle' dominant-baseline='central'%3E開%3C/text%3E%3Crect x='8' y='84' width='84' height='4' fill='%23e2a070'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div id="page-loader">
+        <span class="loader-kanji">開</span>
+        <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+
     <div id="progress-bar"></div>
-    <style>
-        @keyframes loadBar { to { width: 100%; } }
-        #page-loader.hidden { opacity: 0; visibility: hidden; }
-    </style>
 
     <nav id="navbar">
         <a href="#" class="nav-logo">Lucas Oliveira Gomes</a>
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
             <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#formacao">Formação</a></li>
             <li><a href="#experiencia">Experiência</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
         <a href="/cv-lucas-oliveira-gomes.pdf" download="CV-Lucas-Oliveira-Gomes.pdf" class="nav-cta">Download CV</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
 
     <section class="hero">
-        <video class="hero-video" autoplay muted loop playsinline>
+        <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
             <source src="mount-fuji-sunset-moewalls-com.mp4" type="video/mp4">
-            <source src="SEU_VIDEO.webm" type="video/webm">
         </video>
+        <span class="hero-bg-number" aria-hidden="true" data-parallax="0.16">開</span>
         <div class="hero-inner">
+            <span class="hero-badge hero-fade" style="--d:0.1s">
+                <span class="hero-badge-dot"></span>
+                Disponível para estágio · aprendiz de TI
+            </span>
             <h1 class="hero-name">
-                <span class="word">Lucas</span>
-                <span class="word">Oliveira</span>
-                <span class="word">Gomes</span>
+                <span class="word"><span class="word-inner">Lucas</span></span>
+                <span class="word"><span class="word-inner">Oliveira</span></span>
+                <span class="word"><span class="word-inner gradient-text">Gomes</span></span>
             </h1>
-            <div class="hero-bottom">
-                <div>
-                    <p class="hero-role">
-                        Desenvolvedor em Formação<br>
-                        Estagiário de TI · Aprendiz
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#experiencia" class="btn-primary">Ver Experiência →</a>
-                        <a href="#contato" class="btn-outline">Entre em Contato</a>
-                    </div>
-                </div>
-                <p class="hero-desc">Estudante de Ciência da Computação com experiência prática em desenvolvimento web. Orientado a soluções, disciplinado e com forte capacidade de aprendizado. Buscando oportunidade como Estagiário ou Aprendiz de TI.</p>
+            <p class="hero-role hero-fade" style="--d:0.55s">Desenvolvedor em Formação · Estagiário de TI · Aprendiz</p>
+            <p class="hero-desc hero-fade" style="--d:0.7s">Estudante de Ciência da Computação com experiência prática em desenvolvimento web. Orientado a soluções, disciplinado e com forte capacidade de aprendizado. Buscando oportunidade como Estagiário ou Aprendiz de TI.</p>
+            <div class="hero-actions hero-fade" style="--d:0.85s">
+                <a href="#experiencia" class="btn-primary magnetic">Ver Experiência →</a>
+                <a href="#contato" class="btn-outline magnetic">Entre em Contato</a>
             </div>
         </div>
     </section>
@@ -90,6 +113,36 @@
             <div class="section-header reveal">
                 <span class="section-num">02</span>
                 <h2 class="section-title">Habilidades Técnicas</h2>
+            </div>
+            <div class="marquee reveal" aria-hidden="true">
+                <div class="marquee-track">
+                    <span class="marquee-item"><img src="images/Csharp.png" alt="">C#</span>
+                    <span class="marquee-item"><img src="images/Python.png" alt="">Python</span>
+                    <span class="marquee-item"><img src="images/JS.png" alt="">JavaScript</span>
+                    <span class="marquee-item"><img src="images/Html.png" alt="">HTML</span>
+                    <span class="marquee-item"><img src="images/CSS.png" alt="">CSS</span>
+                    <span class="marquee-item"><img src="images/MySQL.png" alt="">MySQL</span>
+                    <span class="marquee-item"><img src="images/Flask.png" alt="">Flask</span>
+                    <span class="marquee-item"><img src="images/Unity.png" alt="">Unity</span>
+                    <span class="marquee-item"><img src="images/NodeJS.png" alt="">Node.js</span>
+                    <span class="marquee-item"><img src="images/Git.png" alt="">Git</span>
+                    <span class="marquee-item"><img src="images/Excel.png" alt="">Excel</span>
+                    <span class="marquee-item"><img src="images/Word.png" alt="">Word</span>
+                    <span class="marquee-item"><img src="images/Canva.png" alt="">Canva</span>
+                    <span class="marquee-item" aria-hidden="true"><img src="images/Csharp.png" alt="">C#</span>
+                    <span class="marquee-item" aria-hidden="true"><img src="images/Python.png" alt="">Python</span>
+                    <span class="marquee-item" aria-hidden="true"><img src="images/JS.png" alt="">JavaScript</span>
+                    <span class="marquee-item" aria-hidden="true"><img src="images/Html.png" alt="">HTML</span>
+                    <span class="marquee-item" aria-hidden="true"><img src="images/CSS.png" alt="">CSS</span>
+                    <span class="marquee-item" aria-hidden="true"><img src="images/MySQL.png" alt="">MySQL</span>
+                    <span class="marquee-item" aria-hidden="true"><img src="images/Flask.png" alt="">Flask</span>
+                    <span class="marquee-item" aria-hidden="true"><img src="images/Unity.png" alt="">Unity</span>
+                    <span class="marquee-item" aria-hidden="true"><img src="images/NodeJS.png" alt="">Node.js</span>
+                    <span class="marquee-item" aria-hidden="true"><img src="images/Git.png" alt="">Git</span>
+                    <span class="marquee-item" aria-hidden="true"><img src="images/Excel.png" alt="">Excel</span>
+                    <span class="marquee-item" aria-hidden="true"><img src="images/Word.png" alt="">Word</span>
+                    <span class="marquee-item" aria-hidden="true"><img src="images/Canva.png" alt="">Canva</span>
+                </div>
             </div>
             <table class="skills-table reveal">
                 <tr>
@@ -217,12 +270,28 @@
             <div class="timeline-list">
                 <div class="timeline-entry reveal">
                     <div class="timeline-left">
-                        <p class="timeline-year">Recente</p>
+                        <p class="timeline-year">5 meses</p>
+                        <p class="timeline-institution">Centro Universitário<br>ENIAC</p>
+                    </div>
+                    <div>
+                        <h3 class="timeline-title">Estagiário — Desenvolvedor</h3>
+                        <p class="timeline-sub">Estágio em Desenvolvimento · 3h/dia · Guarulhos, SP</p>
+                        <ul class="timeline-bullets">
+                            <li>Desenvolvimento web na prática: participei da construção de plataformas reais como o Evolua+ (saúde mental corporativa), com HTML, CSS, JavaScript, Node.js e MySQL.</li>
+                            <li>Trabalho em equipe: colaborei com outros estagiários em projetos reais, dividindo tarefas e integrando funcionalidades do front e do back-end.</li>
+                            <li>Rotina diária de 3 horas dedicada à programação, banco de dados e resolução de problemas.</li>
+                            <li>Aplicação de lógica e boas práticas no desenvolvimento de sistemas voltados a usuários reais.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-entry reveal">
+                    <div class="timeline-left">
+                        <p class="timeline-year">2 meses</p>
                         <p class="timeline-institution">StudioMC<br>Guarulhos, SP</p>
                     </div>
                     <div>
                         <h3 class="timeline-title">Estagiário — Logística</h3>
-                        <p class="timeline-sub">Estágio · Guarulhos, SP</p>
+                        <p class="timeline-sub">Estágio · 2 meses · Guarulhos, SP</p>
                         <ul class="timeline-bullets">
                             <li>Otimização de Fluxo: Estruturei do zero um sistema de organização logística com controle em planilhas digitais.</li>
                             <li>Gestão de Estoque: Responsável pela conferência, controle de reposição e monitoramento rigoroso de validades.</li>
@@ -233,12 +302,12 @@
                 </div>
                 <div class="timeline-entry reveal">
                     <div class="timeline-left">
-                        <p class="timeline-year">Anterior</p>
+                        <p class="timeline-year">9 meses</p>
                         <p class="timeline-institution">Promofarma<br>Guarulhos, SP</p>
                     </div>
                     <div>
                         <h3 class="timeline-title">Jovem Aprendiz</h3>
-                        <p class="timeline-sub">Aprendizagem Profissional · Guarulhos, SP</p>
+                        <p class="timeline-sub">Aprendizagem Profissional · 9 meses · Guarulhos, SP</p>
                         <ul class="timeline-bullets">
                             <li>Controle e reposição de estoque, garantindo disponibilidade dos produtos.</li>
                             <li>Organização e padronização de gôndolas, melhorando a experiência do cliente.</li>
@@ -253,7 +322,7 @@
         <section class="section" id="projetos">
             <div class="section-header reveal">
                 <span class="section-num">05</span>
-                <h2 class="section-title">Projeto em Destaque</h2>
+                <h2 class="section-title">Projetos em Destaque</h2>
             </div>
             <div class="project-single reveal">
                 <div>
@@ -284,6 +353,33 @@
                     </div>
                 </div>
                 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7447767486810472448/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFjRrPUBtN-xev0hVY07RDfky2w3O-JH9kE" target="_blank" class="project-link">Ver projeto →</a>
+            </div>
+            <br>
+            <div class="project-single reveal">
+                <div>
+                    <p class="project-tag">Cliente · No ar</p>
+                    <h3 class="project-title">JF Consultoria e Gestão</h3>
+                    <p class="project-desc">Desenvolvimento do site institucional da JF Consultoria e Gestão, apresentando os serviços, a área de atuação e os canais de contato da empresa. Site responsivo, com foco em clareza, navegação fluida e uma identidade visual profissional.</p>
+                    <div class="project-techs">
+                        <span class="tech-tag">HTML / CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsivo</span>
+                    </div>
+                </div>
+                <a href="https://jfconsultoriaegestao.com.br/" target="_blank" class="project-link">Ver site →</a>
+            </div>
+            <br>
+            <div class="project-single reveal">
+                <div>
+                    <p class="project-tag">Projeto pessoal · Sistema web</p>
+                    <h3 class="project-title">KorumHorus</h3>
+                    <p class="project-desc">Gerenciador de tarefas simples e direto, com três níveis de acesso — Administrador, Líder e Funcionário. Cada painel oferece permissões e visões distintas, permitindo distribuir, acompanhar e concluir tarefas de forma organizada dentro de uma equipe.</p>
+                    <div class="project-techs">
+                        <span class="tech-tag">HTML / CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Controle de acesso</span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -416,9 +512,13 @@
         </div>
     </footer>
 
-    <a href="#" class="scroll-top" id="scrollTop">↑</a>
+    <a href="#" class="scroll-top" id="scrollTop" aria-label="Voltar ao topo">↑</a>
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Motion libs (21st.dev-style fluidity): GSAP + ScrollTrigger + Lenis smooth scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
