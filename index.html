@@ -1,527 +1,585 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas Oliveira Gomes — Desenvolvedor em Formação</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lucas Oliveira Gomes · Analista de sistemas</title>
 
-    <meta name="description" content="Portfólio de Lucas Oliveira Gomes — estudante de Ciência da Computação com experiência prática em desenvolvimento web. Buscando oportunidade como Estagiário ou Aprendiz de TI em Guarulhos, SP.">
-    <meta name="author" content="Lucas Oliveira Gomes">
-    <meta name="keywords" content="Lucas Oliveira Gomes, desenvolvedor, estágio TI, Ciência da Computação, Python, JavaScript, C#, portfólio, Guarulhos">
-    <meta name="theme-color" content="#5a7a5a">
-    <link rel="canonical" href="https://lucasog2008.github.io/">
+  <meta name="description" content="Lucas Oliveira Gomes, analista de sistemas na JF Consultoria e estudante de Ciência da Computação em Guarulhos (SP). Constrói e mantém sistemas web completos, do banco de dados à interface.">
+  <meta name="author" content="Lucas Oliveira Gomes">
+  <meta name="theme-color" content="#1a2e1a">
+  <link rel="canonical" href="https://lucasog2008.github.io/">
 
-    <!-- Open Graph / redes sociais -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Lucas Oliveira Gomes — Desenvolvedor em Formação">
-    <meta property="og:description" content="Estudante de Ciência da Computação com experiência prática em desenvolvimento web. Buscando oportunidade como Estagiário ou Aprendiz de TI.">
-    <meta property="og:locale" content="pt_BR">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lucas Oliveira Gomes — Desenvolvedor em Formação">
-    <meta name="twitter:description" content="Estudante de Ciência da Computação com experiência prática em desenvolvimento web.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lucas Oliveira Gomes · Desenvolvedor">
+  <meta property="og:description" content="Sistemas reais, do banco à tela. Analista de sistemas na JF Consultoria e estudante de Ciência da Computação em Guarulhos.">
+  <meta property="og:image" content="media/fuji-poster.jpg">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
 
-    <!-- Favicon (SVG inline — kanji 開 'desenvolver/abrir', acento laranja do site) -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23ffffff'/%3E%3Ctext x='50' y='52' font-family='serif' font-size='62' font-weight='900' fill='%235a7a5a' text-anchor='middle' dominant-baseline='central'%3E開%3C/text%3E%3Crect x='8' y='84' width='84' height='4' fill='%23e2a070'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%235a7a5a'/%3E%3Ctext x='50' y='54' font-family='serif' font-size='64' font-weight='700' fill='%23ffffff' text-anchor='middle' dominant-baseline='central'%3E開%3C/text%3E%3Crect x='14' y='86' width='72' height='5' fill='%23e2a070'/%3E%3C/svg%3E">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&text=%E9%96%8B&display=swap">
+  <link rel="preload" as="image" href="media/fuji-poster.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-    <div id="page-loader">
-        <span class="loader-kanji">開</span>
-        <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  <!-- ============ BARRA ============ -->
+  <header class="bar" id="topo">
+    <a class="wordmark" href="#topo" aria-label="Lucas Oliveira Gomes, início">
+      <span class="mark" aria-hidden="true">開</span>
+      <span>Lucas Oliveira Gomes</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#projetos">Projetos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#trajetoria">Trajetória</a>
+      <a href="#contato">Contato</a>
+      <a class="nav-cv" href="cv-lucas-oliveira-gomes.pdf" download="CV-Lucas-Oliveira-Gomes.pdf">Currículo em PDF</a>
+    </nav>
+    <a class="btn btn-small bar-cv" href="cv-lucas-oliveira-gomes.pdf" download="CV-Lucas-Oliveira-Gomes.pdf">Currículo</a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="nav">
+      <span class="menu-toggle-label">Menu</span>
+    </button>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ PALCO DIVIDIDO: HERO + PROJETOS ============ -->
+    <div class="split">
+      <div class="read">
+
+        <section class="hero" aria-labelledby="hero-title">
+          <h1 id="hero-title" class="display" data-reveal>Sistemas reais, do banco à&nbsp;tela.</h1>
+          <p class="hero-lead" data-reveal>Sou Lucas Oliveira Gomes, analista de sistemas na JF Consultoria e estudante de Ciência da Computação no ENIAC. Construo e mantenho sistemas web completos, do banco de dados à&nbsp;tela.</p>
+          <div class="hero-actions" data-reveal>
+            <a class="btn" href="#projetos">Ver os projetos</a>
+            <a class="link" href="cv-lucas-oliveira-gomes.pdf" download="CV-Lucas-Oliveira-Gomes.pdf">Baixar currículo</a>
+          </div>
+        </section>
+
+        <section class="ledger" id="projetos" aria-labelledby="projetos-title">
+          <h2 id="projetos-title" class="head" data-reveal>Projetos</h2>
+          <p class="ledger-note" data-reveal>Sistemas que construí, sistemas que mantenho no trabalho e sites publicados para clientes.</p>
+          <ol class="ledger-list" role="list">
+            <li data-reveal><a class="row" href="#jfcentral" data-stage="jfcentral">
+              <span class="row-name">JF Central de Gestão</span><span class="row-kind">Gestão interna e análise do site</span><span class="row-state">Trabalho</span>
+            </a></li>
+            <li data-reveal><a class="row" href="#manutencao" data-stage="contacta">
+              <span class="row-name">Sistemas Contacta</span><span class="row-kind">Folha e recrutamento, em manutenção</span><span class="row-state">Trabalho</span>
+            </a></li>
+            <li data-reveal><a class="row" href="#asgard" data-stage="asgard">
+              <span class="row-name">ASGARD</span><span class="row-kind">Central administrativa local</span><span class="row-state">Pessoal</span>
+            </a></li>
+            <li data-reveal><a class="row" href="#vigia" data-stage="vigia">
+              <span class="row-name">VIGIA</span><span class="row-kind">Medição de atividade no trabalho</span><span class="row-state">Pessoal</span>
+            </a></li>
+            <li data-reveal><a class="row" href="#cofre" data-stage="cofre">
+              <span class="row-name">Cofre de Acessos</span><span class="row-kind">Credenciais com permissão e auditoria</span><span class="row-state">Trabalho</span>
+            </a></li>
+            <li data-reveal><a class="row" href="#evolua" data-stage="evolua">
+              <span class="row-name">Evolua+</span><span class="row-kind">Saúde mental corporativa</span><span class="row-state">Estágio</span>
+            </a></li>
+            <li data-reveal><a class="row" href="#jb" data-stage="jb">
+              <span class="row-name">JB Cargo</span><span class="row-kind">Site de transportadora</span><span class="row-state">No ar</span>
+            </a></li>
+            <li data-reveal><a class="row" href="#jf" data-stage="jf">
+              <span class="row-name">JF Consultoria</span><span class="row-kind">Site institucional</span><span class="row-state">No ar</span>
+            </a></li>
+            <li data-reveal><a class="row" href="#cartao" data-stage="cartao">
+              <span class="row-name">Tempo de casa</span><span class="row-kind">Cartão com medalhas em 3D</span><span class="row-state">Trabalho</span>
+            </a></li>
+          </ol>
+        </section>
+      </div>
+
+      <!-- Palco fixo -->
+      <aside class="stage" aria-label="Pré-visualização do projeto">
+        <div class="stage-frame">
+          <figure class="layer is-on" data-layer="home">
+            <video class="stage-video" muted loop playsinline preload="none" poster="media/fuji-poster.jpg" aria-hidden="true">
+              <source src="media/fuji-loop.mp4" type="video/mp4">
+            </video>
+            <img class="stage-poster" src="media/fuji-poster.jpg" width="1280" height="720" alt="Monte Fuji ao entardecer, acima de um mar de nuvens">
+          </figure>
+          <figure class="layer" data-layer="jfcentral" aria-hidden="true">
+            <div class="plate plate-jfc">
+              <span>Operações</span><span>Administrativo</span><span>Financeiro</span>
+              <span>Estratégia e metas</span><span class="is-dark">Site e digital</span><span>Marketing</span>
+              <span class="is-wide">Portal do cliente e chamados</span>
+            </div>
+          </figure>
+          <figure class="layer" data-layer="contacta" aria-hidden="true">
+            <div class="plate plate-contacta">
+              <span>Folha de pagamento</span>
+              <span>Recrutamento e seleção</span>
+              <span>Contacta+ avaliação de candidatos</span>
+            </div>
+          </figure>
+          <figure class="layer layer-asgard" data-layer="asgard" aria-hidden="true">
+            <svg class="asgard-mark" viewBox="0 0 64 64" fill="none">
+              <path d="M10 50V30l5-4 5 4v-8l6-6 6-8 6 8 6 6v8l5-4 5 4v20z" stroke="#c9a45c" stroke-width="2.4" stroke-linejoin="round"/>
+              <path d="M27 50V40a5 5 0 0 1 10 0v10" stroke="#c9a45c" stroke-width="2.4"/>
+              <path d="M6 56h52" stroke="#86b5c8" stroke-width="2.4" stroke-linecap="round"/>
+            </svg>
+            <figcaption>ASGARD<span>Administrador de Sistema Geral e Auxiliar de Recursos Digitais</span></figcaption>
+          </figure>
+          <figure class="layer" data-layer="vigia" aria-hidden="true">
+            <div class="plate plate-vigia">
+              <span class="node">Agente no Windows</span>
+              <span class="node">Extensão do navegador</span>
+              <span class="node is-core">API FastAPI</span>
+              <span class="node">Painel React</span>
+              <span class="node is-local">IA local no Ollama</span>
+            </div>
+          </figure>
+          <figure class="layer" data-layer="cofre" aria-hidden="true">
+            <div class="plate plate-cofre">
+              <span class="vault"><b>Marketplace</b><i>••••••••••</i><em>Revelar</em></span>
+              <span class="vault"><b>ERP</b><i>••••••••••</i><em>Revelar</em></span>
+              <span class="vault is-open"><b>Hospedagem</b><i>Revelada e registrada na auditoria</i></span>
+              <span class="vault"><b>Design</b><i>••••••••••</i><em>Revelar</em></span>
+            </div>
+          </figure>
+          <figure class="layer" data-layer="evolua">
+            <img src="media/evolua-site.jpg" width="1400" height="667" loading="lazy" alt="Página inicial do Evolua+: título Bem-vindo ao Evolua+, seção Quem somos e foto de uma pessoa usando a plataforma no notebook">
+          </figure>
+          <figure class="layer" data-layer="jb">
+            <img src="media/jb-cargo.jpg" width="1200" height="650" loading="lazy" alt="Página inicial do site da JB Cargo">
+          </figure>
+          <figure class="layer" data-layer="jf">
+            <img src="media/jf-site.jpg" width="1200" height="700" loading="lazy" alt="Página inicial do site da JF Consultoria e Gestão Empresarial">
+          </figure>
+          <figure class="layer" data-layer="cartao">
+            <img src="media/cartao-medalhas.jpg" width="880" height="660" loading="lazy" alt="Três medalhas em 3D, de bronze, prata e ouro">
+          </figure>
+          <p class="stage-bar"><span>Analista de sistemas na JF Consultoria</span><span>Guarulhos, SP</span></p>
+        </div>
+      </aside>
     </div>
 
-    <div id="progress-bar"></div>
+    <!-- ============ SISTEMAS ============ -->
+    <section class="works" aria-labelledby="works-title">
+      <h2 id="works-title" class="head works-title" data-reveal>Sistemas</h2>
 
-    <nav id="navbar">
-        <a href="#" class="nav-logo">Lucas Oliveira Gomes</a>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#formacao">Formação</a></li>
-            <li><a href="#experiencia">Experiência</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-        <a href="/cv-lucas-oliveira-gomes.pdf" download="CV-Lucas-Oliveira-Gomes.pdf" class="nav-cta">Download CV</a>
-        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
-            <span></span><span></span><span></span>
-        </button>
-    </nav>
-
-    <section class="hero">
-        <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
-            <source src="mount-fuji-sunset-moewalls-com.mp4" type="video/mp4">
-        </video>
-        <span class="hero-bg-number" aria-hidden="true" data-parallax="0.16">開</span>
-        <div class="hero-inner">
-            <span class="hero-badge hero-fade" style="--d:0.1s">
-                <span class="hero-badge-dot"></span>
-                Disponível para estágio · aprendiz de TI
-            </span>
-            <h1 class="hero-name">
-                <span class="word"><span class="word-inner">Lucas</span></span>
-                <span class="word"><span class="word-inner">Oliveira</span></span>
-                <span class="word"><span class="word-inner gradient-text">Gomes</span></span>
-            </h1>
-            <p class="hero-role hero-fade" style="--d:0.55s">Desenvolvedor em Formação · Estagiário de TI · Aprendiz</p>
-            <p class="hero-desc hero-fade" style="--d:0.7s">Estudante de Ciência da Computação com experiência prática em desenvolvimento web. Orientado a soluções, disciplinado e com forte capacidade de aprendizado. Buscando oportunidade como Estagiário ou Aprendiz de TI.</p>
-            <div class="hero-actions hero-fade" style="--d:0.85s">
-                <a href="#experiencia" class="btn-primary magnetic">Ver Experiência →</a>
-                <a href="#contato" class="btn-outline magnetic">Entre em Contato</a>
+      <article class="work" id="jfcentral" aria-labelledby="jfc-t">
+        <div class="work-pic" data-reveal>
+          <div class="plate plate-jfc" aria-hidden="true">
+              <span>Operações</span><span>Administrativo</span><span>Financeiro</span>
+              <span>Estratégia e metas</span><span class="is-dark">Site e digital</span><span>Marketing</span>
+              <span class="is-wide">Portal do cliente e chamados</span>
             </div>
         </div>
+        <div class="work-text">
+          <h3 id="jfc-t" class="head" data-reveal>JF Central de Gestão</h3>
+          <p class="work-lead" data-reveal>O sistema interno da JF Consultoria, que desenvolvo no meu trabalho atual.</p>
+          <dl class="facts" data-reveal>
+            <dt>O problema</dt><dd>Tarefas, projetos, reuniões, finanças, metas e os números do site viviam em lugares separados.</dd>
+            <dt>Como funciona</dt><dd>Cada pessoa entra com o próprio login e vê só os setores do seu cargo. São 47 telas em operações, administrativo, financeiro, estratégia, marketing, portal do cliente com chamados e análise do site.</dd>
+            <dt>Destaques</dt><dd>Análise de visitas própria, com páginas, origens, funis, mapa de calor e Web Vitals, sem scripts de terceiros. Metas com indicadores calculados automaticamente, auditoria, senhas com Argon2id, proteção CSRF e bloqueio progressivo de tentativas.</dd>
+            <dt>Tecnologias</dt><dd>PHP sem framework, MySQL, gráficos em SVG gerados no servidor e testes automatizados em PHP.</dd>
+            <dt>Em números</dt><dd>47 telas e cerca de 18 mil linhas de PHP.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="work work-flip" id="asgard" aria-labelledby="asgard-t">
+        <div class="work-pic is-ui" data-reveal>
+          <!-- Fragmento da interface do ASGARD: módulo Monitoramento, lendo o dispositivo de quem visita -->
+          <div class="ui" data-ui role="img" aria-labelledby="ui-desc">
+            <div class="ui-rail" aria-hidden="true">
+              <div class="ui-brand">
+                <svg viewBox="0 0 64 64" fill="none"><path d="M10 50V30l5-4 5 4v-8l6-6 6-8 6 8 6 6v8l5-4 5 4v20z" stroke="#c9a45c" stroke-width="4" stroke-linejoin="round"/><path d="M6 56h52" stroke="#86b5c8" stroke-width="4" stroke-linecap="round"/></svg>
+                ASGARD
+              </div>
+              <span class="ui-group">Comando</span><span>Dashboard</span>
+              <span class="ui-group">Ambiente</span><span>Projetos</span><span>Linguagens e bibliotecas</span><span>Skills</span>
+              <span class="ui-group">Inteligências</span><span>Claude Code</span><span>Inteligências artificiais</span>
+              <span class="ui-group">Máquina</span><span class="is-on">Monitoramento</span><span>Processos e tarefas</span>
+              <span class="ui-group">Registro</span><span>Histórico</span><span>Configurações</span>
+            </div>
+            <div class="ui-main">
+              <p class="ui-crumb">Máquina › Monitoramento</p>
+              <p class="ui-title">Este dispositivo, ao vivo</p>
+              <div class="ui-grid">
+                <div class="ui-cell"><span>Núcleos lógicos</span><strong id="m-cores">indisponível</strong></div>
+                <div class="ui-cell"><span>Memória</span><strong id="m-mem">indisponível</strong></div>
+                <div class="ui-cell"><span>Tela</span><strong id="m-screen">indisponível</strong></div>
+                <div class="ui-cell"><span>Rede</span><strong id="m-net">indisponível</strong></div>
+              </div>
+              <div class="ui-chart">
+                <div class="ui-chart-head"><span>Quadros por segundo</span><strong id="m-fps">medindo</strong></div>
+                <svg viewBox="0 0 240 60" preserveAspectRatio="none"><polyline id="m-line" fill="none" stroke="#86b5c8" stroke-width="2" vector-effect="non-scaling-stroke" points=""/></svg>
+              </div>
+              <p class="ui-foot">Nesta página há <strong id="m-time">0 s</strong></p>
+            </div>
+          </div>
+          <p class="sr" id="ui-desc">Recriação do módulo de Monitoramento do ASGARD mostrando dados do seu dispositivo: núcleos, memória, tela, rede e quadros por segundo.</p>
+          <p class="pic-caption">O módulo de Monitoramento do ASGARD, recriado aqui para ler o seu dispositivo. O que o navegador não informa aparece como indisponível, nunca como zero, a mesma regra do sistema original.</p>
+        </div>
+        <div class="work-text">
+          <h3 id="asgard-t" class="head" data-reveal>ASGARD</h3>
+          <p class="work-lead" data-reveal>Uma central de comando local que reúne projetos, linguagens, IAs e a própria máquina em uma tela, com dados reais.</p>
+          <dl class="facts" data-reveal>
+            <dt>O problema</dt><dd>Dezenas de projetos, runtimes, modelos de IA locais e sessões do Claude Code espalhados pelo computador, sem um lugar que mostre o estado de tudo.</dd>
+            <dt>Como funciona</dt><dd>Dez módulos: inventário de projetos e dependências, skills, sessões do Claude Code com streaming e autorizações, chat com modelos locais, monitoramento de CPU, GPU, rede e discos, tarefas, histórico e backup.</dd>
+            <dt>Segurança</dt><dd>Só escuta em 127.0.0.1, valida token, Host e Origin em toda chamada e exige confirmação de uso único, emitida pelo servidor, para qualquer ação que altere algo.</dd>
+            <dt>Tecnologias</dt><dd>Python, FastAPI, PostgreSQL, psutil, pytest e JavaScript puro, sem build.</dd>
+            <dt>Em números</dt><dd>9,9 mil linhas, 76 testes automatizados, 84 rotas de API e 13 tabelas.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="work" id="vigia" aria-labelledby="vigia-t">
+        <div class="work-pic" data-reveal>
+          <div class="plate plate-vigia" aria-hidden="true">
+            <span class="node">Agente no Windows</span>
+            <span class="node">Extensão do navegador</span>
+            <span class="node is-core">API FastAPI</span>
+            <span class="node">Painel React</span>
+            <span class="node is-local">IA local no Ollama</span>
+          </div>
+        </div>
+        <div class="work-text">
+          <h3 id="vigia-t" class="head" data-reveal>VIGIA</h3>
+          <p class="work-lead" data-reveal>Mede como o tempo de trabalho é usado nos computadores de uma empresa, com regras claras de privacidade.</p>
+          <dl class="facts" data-reveal>
+            <dt>O problema</dt><dd>Empresas querem entender o uso do horário de trabalho sem invadir a privacidade de quem trabalha.</dd>
+            <dt>Como funciona</dt><dd>Um agente no Windows e uma extensão de navegador enviam a atividade para a API. O administrador vê funcionários, máquinas, sessões e auditoria; cada funcionário vê os próprios dados. Várias empresas usam a mesma plataforma, isoladas entre si.</dd>
+            <dt>Privacidade</dt><dd>A extensão só informa o domínio da aba ativa, sem ler páginas, senhas ou abas anônimas. A captura de tela vem desligada, exige consentimento e é analisada por uma IA local; a imagem é apagada na hora e só fica a descrição.</dd>
+            <dt>Tecnologias</dt><dd>Python, FastAPI, SQLAlchemy, Alembic, PostgreSQL no Supabase, React 19, TypeScript, Tailwind e Ollama. Testes na API, no agente, no worker e na extensão.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="work work-flip" id="cofre" aria-labelledby="cofre-t">
+        <div class="work-pic" data-reveal>
+          <div class="plate plate-cofre" aria-hidden="true">
+            <span class="vault"><b>Marketplace</b><i>••••••••••</i><em>Revelar</em></span>
+            <span class="vault"><b>ERP</b><i>••••••••••</i><em>Revelar</em></span>
+            <span class="vault is-open"><b>Hospedagem</b><i>Revelada e registrada na auditoria</i></span>
+            <span class="vault"><b>Design</b><i>••••••••••</i><em>Revelar</em></span>
+          </div>
+        </div>
+        <div class="work-text">
+          <h3 id="cofre-t" class="head" data-reveal>Cofre de Acessos</h3>
+          <p class="work-lead" data-reveal>Cada pessoa vê só as senhas de que precisa, e toda senha revelada fica registrada.</p>
+          <dl class="facts" data-reveal>
+            <dt>O problema</dt><dd>Credenciais de várias empresas espalhadas por marketplaces, ERPs e hospedagem, sem controle de quem acessa o quê.</dd>
+            <dt>Como funciona</dt><dd>Cinco papéis (Administrador, Operacional, Fiscal, Financeiro e Comercial) liberam categorias inteiras, e o administrador concede acessos avulsos. As senhas ficam criptografadas e só aparecem sob demanda.</dd>
+            <dt>Destaques</dt><dd>Criptografia AES-256-GCM, login com bcrypt e troca obrigatória no primeiro acesso, auditoria de logins e revelações e integração OAuth com o Mercado Livre para sincronizar produtos e links.</dd>
+            <dt>Tecnologias</dt><dd>PHP 8 sem dependências externas, PostgreSQL, HTML, CSS e JavaScript.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="work" id="evolua" aria-labelledby="evolua-t">
+        <div class="work-pic is-wide" data-reveal>
+          <img src="media/evolua-site.jpg" width="1400" height="667" loading="lazy" alt="Página inicial do Evolua+: título Bem-vindo ao Evolua+, seção Quem somos e foto de uma pessoa usando a plataforma no notebook">
+        </div>
+        <div class="work-text">
+          <h3 id="evolua-t" class="head" data-reveal>Evolua+</h3>
+          <p class="work-lead" data-reveal>Conecta colaboradores a psicólogos com segurança, e a empresa paga o acompanhamento.</p>
+          <dl class="facts" data-reveal>
+            <dt>O problema</dt><dd>Pedir ajuda psicológica no trabalho expõe quem pede. A plataforma cria um caminho anônimo até o atendimento.</dd>
+            <dt>Como funciona</dt><dd>Triagem com formulários e desafios reflexivos gera um perfil anônimo. Profissionais demonstram interesse e iniciam o acompanhamento. Tarefas validadas rendem pontos, o que incentiva o engajamento.</dd>
+            <dt>Minha parte</dt><dd>Desenvolvimento durante o estágio no ENIAC, dividindo front-end e back-end com outros estagiários.</dd>
+            <dt>Tecnologias</dt><dd>HTML, CSS, JavaScript, Node.js, MySQL, XAMPP</dd>
+          </dl>
+          <p class="work-links"><a class="link" href="https://evolua-visualizacao.onrender.com" target="_blank" rel="noopener">Abrir a visualização</a>
+          <a class="link" href="https://www.linkedin.com/feed/update/urn:li:activity:7447767486810472448/" target="_blank" rel="noopener">Apresentação no LinkedIn</a></p>
+        </div>
+      </article>
     </section>
 
-    <br><br>
+    <!-- ============ SISTEMAS QUE MANTENHO ============ -->
+    <section class="maint" id="manutencao" aria-labelledby="maint-title">
+      <div class="maint-head">
+        <h2 id="maint-title" class="head" data-reveal>Sistemas que mantenho</h2>
+        <p class="maint-lead" data-reveal>Na JF Consultoria, cuido da manutenção de três sistemas internos da Contacta. Os três foram migrados da plataforma Base44 para o Supabase.</p>
+      </div>
+      <ol class="maint-list" role="list">
+        <li data-reveal>
+          <h3>Folha de pagamento</h3>
+          <p class="maint-what">Calcula a folha de cada colaborador, do ponto ao pagamento.</p>
+          <p>Sincroniza colaboradores, locais e faltas do sistema de ponto Tangerino e calcula a folha por tipo de contrato (motoboy CLT, MEI, escritório e sócio), com INSS, FGTS, periculosidade e vales. Divide o mês em duas quinzenas, fecha o mês, controla os pagamentos e exporta Excel, PDF e recibos.</p>
+          <p class="maint-tech">React, Vite, Tailwind, Supabase e Edge Functions</p>
+        </li>
+        <li data-reveal>
+          <h3>Recrutamento e seleção</h3>
+          <p class="maint-what">Todo o funil de contratação de motofretistas.</p>
+          <p>Cadastro de contratantes e vagas, acompanhamento de candidatos, ficha de entrevista com saúde, teste físico, teste de roteiro e vistoria da moto, checklist de documentos e aprovação final pelo administrador.</p>
+          <p class="maint-tech">React, Vite, Tailwind, shadcn/ui, Supabase e Netlify</p>
+        </li>
+        <li data-reveal>
+          <h3>Contacta+</h3>
+          <p class="maint-what">Avaliação de candidatos por formulários e provas.</p>
+          <p>Montagem de provas com pontuação, convite por link para o candidato responder sem login, correção automática e revisão manual das questões abertas, dashboard de resultados e exportação da avaliação em PDF.</p>
+          <p class="maint-tech">React, Supabase Auth, React Query, Recharts e jsPDF</p>
+        </li>
+      </ol>
+    </section>
 
-    <main class="main-content">
+    <!-- ============ SITES E PEÇAS PARA CLIENTES ============ -->
+    <section class="clients" aria-labelledby="clients-title">
+      <h2 id="clients-title" class="head" data-reveal>Feitos para clientes</h2>
+      <div class="clients-grid">
+        <article class="client client-main" id="jb" aria-labelledby="jb-t">
+          <figure class="client-pic" data-reveal>
+            <img src="media/jb-cargo.jpg" width="1200" height="650" loading="lazy" alt="Página inicial da JB Cargo: título Logística que move o seu negócio sobre a foto de uma van na rua ao entardecer">
+          </figure>
+          <h3 id="jb-t" class="client-title" data-reveal>JB Cargo</h3>
+          <p class="client-lead" data-reveal>Site institucional de uma transportadora de cargas dedicadas da Grande São Paulo.</p>
+          <dl class="facts facts-tight" data-reveal>
+            <dt>O que tem</dt><dd>Oito páginas: início, quem somos, diferenciais, serviços, experiência, cobertura, contato e erro 404.</dd>
+            <dt>Destaques</dt><dd>SEO documentado e aplicado em cada página: endereço canônico, Open Graph, sitemap e dados estruturados.</dd>
+            <dt>Tecnologias</dt><dd>HTML, CSS e JavaScript puros</dd>
+          </dl>
+          <a class="link link-light" href="https://jbcargodistribuicao.com.br/" target="_blank" rel="noopener">Abrir o site</a>
+        </article>
 
-        <section class="section" id="sobre">
-            <div class="section-header reveal">
-                <span class="section-num">01</span>
-                <h2 class="section-title">Objetivo Profissional</h2>
-            </div>
-            <div class="sobre-block reveal">
-                <p class="sobre-label">Resumo</p>
-                <p class="sobre-text">Estudante de Ciência da Computação na ENIAC com experiência prática em desenvolvimento web e foco na resolução de problemas. Possuo conhecimento em diversas linguagens de programação e busco uma oportunidade como Estagiário ou Aprendiz nas áreas de TI, Logística ou Administração. Sou um profissional disciplinado, proativo e com alta capacidade de aprendizado, pronto para contribuir com a inovação e a eficiência dos processos tecnológicos da empresa.</p>
-            </div>
-            <div class="info-row stagger-children">
-                <div class="info-cell">
-                    <p class="info-cell-label">Localização</p>
-                    <p class="info-cell-value">Guarulhos Gopoúva, SP</p>
-                </div>
-                <div class="info-cell">
-                    <p class="info-cell-label">Disponibilidade</p>
-                    <p class="info-cell-value">07:00 as 20:00</p>
-                </div>
-                <div class="info-cell">
-                    <p class="info-cell-label">Idiomas</p>
-                    <p class="info-cell-value">Português · Inglês básico</p>
-                </div>
-                <div class="info-cell">
-                    <p class="info-cell-label">GitHub</p>
-                    <p class="info-cell-value">LucasOG2008</p>
-                </div>
-            </div>
-        </section>
+        <div class="clients-side">
+          <article class="client" id="jf" aria-labelledby="jf-t">
+            <figure class="client-pic" data-reveal>
+              <img src="media/jf-site.jpg" width="1200" height="700" loading="lazy" alt="Página inicial do site da JF Consultoria: título Inovação e estratégia para o sucesso empresarial sobre a foto de um escritório">
+            </figure>
+            <h3 id="jf-t" class="client-title" data-reveal>JF Consultoria e Gestão</h3>
+            <p class="client-lead" data-reveal>Site de uma consultoria empresarial, com serviços, área de atuação e contato. Responsivo, com modo escuro e aviso de privacidade. HTML, CSS e JavaScript.</p>
+            <a class="link link-light" href="https://jfconsultoriaegestao.com.br/" target="_blank" rel="noopener">Abrir o site</a>
+          </article>
 
-        <section class="section" id="habilidades">
-            <div class="section-header reveal">
-                <span class="section-num">02</span>
-                <h2 class="section-title">Habilidades Técnicas</h2>
-            </div>
-            <div class="marquee reveal" aria-hidden="true">
-                <div class="marquee-track">
-                    <span class="marquee-item"><img src="images/Csharp.png" alt="">C#</span>
-                    <span class="marquee-item"><img src="images/Python.png" alt="">Python</span>
-                    <span class="marquee-item"><img src="images/JS.png" alt="">JavaScript</span>
-                    <span class="marquee-item"><img src="images/Html.png" alt="">HTML</span>
-                    <span class="marquee-item"><img src="images/CSS.png" alt="">CSS</span>
-                    <span class="marquee-item"><img src="images/MySQL.png" alt="">MySQL</span>
-                    <span class="marquee-item"><img src="images/PostgreSQL.svg" alt="">PostgreSQL</span>
-                    <span class="marquee-item"><img src="images/Flask.png" alt="">Flask</span>
-                    <span class="marquee-item"><img src="images/Unity.png" alt="">Unity</span>
-                    <span class="marquee-item"><img src="images/NodeJS.png" alt="">Node.js</span>
-                    <span class="marquee-item"><img src="images/Git.png" alt="">Git</span>
-                    <span class="marquee-item"><img src="images/Excel.png" alt="">Excel</span>
-                    <span class="marquee-item"><img src="images/Word.png" alt="">Word</span>
-                    <span class="marquee-item"><img src="images/Canva.png" alt="">Canva</span>
-                    <span class="marquee-item" aria-hidden="true"><img src="images/Csharp.png" alt="">C#</span>
-                    <span class="marquee-item" aria-hidden="true"><img src="images/Python.png" alt="">Python</span>
-                    <span class="marquee-item" aria-hidden="true"><img src="images/JS.png" alt="">JavaScript</span>
-                    <span class="marquee-item" aria-hidden="true"><img src="images/Html.png" alt="">HTML</span>
-                    <span class="marquee-item" aria-hidden="true"><img src="images/CSS.png" alt="">CSS</span>
-                    <span class="marquee-item" aria-hidden="true"><img src="images/MySQL.png" alt="">MySQL</span>
-                    <span class="marquee-item" aria-hidden="true"><img src="images/PostgreSQL.svg" alt="">PostgreSQL</span>
-                    <span class="marquee-item" aria-hidden="true"><img src="images/Flask.png" alt="">Flask</span>
-                    <span class="marquee-item" aria-hidden="true"><img src="images/Unity.png" alt="">Unity</span>
-                    <span class="marquee-item" aria-hidden="true"><img src="images/NodeJS.png" alt="">Node.js</span>
-                    <span class="marquee-item" aria-hidden="true"><img src="images/Git.png" alt="">Git</span>
-                    <span class="marquee-item" aria-hidden="true"><img src="images/Excel.png" alt="">Excel</span>
-                    <span class="marquee-item" aria-hidden="true"><img src="images/Word.png" alt="">Word</span>
-                    <span class="marquee-item" aria-hidden="true"><img src="images/Canva.png" alt="">Canva</span>
-                </div>
-            </div>
-            <table class="skills-table reveal">
-                <tr>
-                    <td class="col-label">Linguagens</td>
-                    <td>
-                        <div class="skill-pills">
-                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Csharp.png" alt="C#"></div><span class="skill-img-label">C#</span></div>
-                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Python.png" alt="Python"></div><span class="skill-img-label">Python</span></div>
-                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/JS.png" alt="JavaScript"></div><span class="skill-img-label">JavaScript</span></div>
-                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Html.png" alt="HTML"></div><span class="skill-img-label">HTML</span></div>
-                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/CSS.png" alt="CSS"></div><span class="skill-img-label">CSS</span></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-label">Banco de Dados</td>
-                    <td>
-                        <div class="skill-pills">
-                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/MySQL.png" alt="MySQL"></div><span class="skill-img-label">MySQL</span></div>
-                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/PostgreSQL.svg" alt="PostgreSQL"></div><span class="skill-img-label">PostgreSQL</span></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-label">Frameworks & Libs</td>
-                    <td>
-                        <div class="skill-pills">
-                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Flask.png" alt="Flask"></div><span class="skill-img-label">Flask</span></div>
-                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Unity.png" alt="Unity"></div><span class="skill-img-label">Unity</span></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-label">Ferramentas</td>
-                    <td>
-                        <div class="skill-pills">
-                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Excel.png" alt="Excel"></div><span class="skill-img-label">Excel</span></div>
-                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Word.png" alt="Word"></div><span class="skill-img-label">Word</span></div>
-                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Canva.png" alt="Canva"></div><span class="skill-img-label">Canva</span></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-label">Em aprendizado</td>
-                    <td>
-                        <div class="skill-pills">
-                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/NodeJS.png" alt="Node.js"></div><span class="skill-img-label">Node.js</span></div>
-                            <div class="skill-img-pill"><div class="skill-img-box"><img src="images/Git.png" alt="Git"></div><span class="skill-img-label">Git</span></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-label">Soft Skills</td>
-                    <td>
-                        <div class="skill-pills">
-                            <span class="skill-pill">Comunicação clara</span>
-                            <span class="skill-pill">Trabalho em equipe</span>
-                            <span class="skill-pill">Autocontrole</span>
-                            <span class="skill-pill">Comprometimento</span>
-                            <span class="skill-pill">Raciocínio lógico</span>
-                            <span class="skill-pill">Liderança</span>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </section>
-
-        <section class="section" id="formacao">
-            <div class="section-header reveal">
-                <span class="section-num">03</span>
-                <h2 class="section-title">Formação Acadêmica</h2>
-            </div>
-            <div class="timeline-list">
-                <div class="timeline-entry reveal">
-                    <div class="timeline-left">
-                        <p class="timeline-year">Em andamento</p>
-                        <p class="timeline-institution">Centro Universitário<br>ENIAC</p>
-                    </div>
-                    <div>
-                        <h3 class="timeline-title">Bacharelado em Ciência da Computação</h3>
-                        <p class="timeline-sub">Graduação · Presencial</p>
-                        <p class="timeline-desc">Formação superior em computação, abrangendo algoritmos, estruturas de dados, engenharia de software e desenvolvimento de sistemas.</p>
-                    </div>
-                </div>
-                <div class="timeline-entry reveal">
-                    <div class="timeline-left">
-                        <p class="timeline-year">Concluído</p>
-                        <p class="timeline-institution">E.E. Frederico De<br>Barros Brotero</p>
-                    </div>
-                    <div>
-                        <h3 class="timeline-title">Ensino Médio Técnico em Desenvolvimento de Sistemas</h3>
-                        <p class="timeline-sub">Técnico · Guarulhos, SP</p>
-                        <p class="timeline-desc">Formação técnica em programação, banco de dados, desenvolvimento web e lógica de sistemas. Eleito líder do projeto de TCC da turma.</p>
-                    </div>
-                </div>
-                <div class="timeline-entry reveal">
-                    <div class="timeline-left">
-                        <p class="timeline-year">Concluído</p>
-                        <p class="timeline-institution">SENAC</p>
-                    </div>
-                    <div>
-                        <h3 class="timeline-title">Curso de Desenvolvimento de Jogos com Unity</h3>
-                        <p class="timeline-sub">Extensão · Certificado</p>
-                        <p class="timeline-desc">Desenvolvimento de jogos 2D e 3D com Unity Engine e C#. Primeiro contato com programação orientada a componentes e game design.</p>
-                    </div>
-                </div>
-                <div class="timeline-entry reveal">
-                    <div class="timeline-left">
-                        <p class="timeline-year">Concluído</p>
-                        <p class="timeline-institution">Bradesco</p>
-                    </div>
-                    <div>
-                        <h3 class="timeline-title">Curso de Office na Prática</h3>
-                        <p class="timeline-sub">Extensão · Certificado</p>
-                        <p class="timeline-desc">Domínio do pacote Microsoft Office com foco em Word, Excel e apresentações profissionais.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="experiencia">
-            <div class="section-header reveal">
-                <span class="section-num">04</span>
-                <h2 class="section-title">Experiência Profissional</h2>
-            </div>
-            <div class="timeline-list">
-                <div class="timeline-entry reveal">
-                    <div class="timeline-left">
-                        <p class="timeline-year">5 meses</p>
-                        <p class="timeline-institution">Centro Universitário<br>ENIAC</p>
-                    </div>
-                    <div>
-                        <h3 class="timeline-title">Estagiário — Desenvolvedor</h3>
-                        <p class="timeline-sub">Estágio em Desenvolvimento · 3h/dia · Guarulhos, SP</p>
-                        <ul class="timeline-bullets">
-                            <li>Desenvolvimento web na prática: participei da construção de plataformas reais como o Evolua+ (saúde mental corporativa), com HTML, CSS, JavaScript, Node.js e MySQL.</li>
-                            <li>Trabalho em equipe: colaborei com outros estagiários em projetos reais, dividindo tarefas e integrando funcionalidades do front e do back-end.</li>
-                            <li>Rotina diária de 3 horas dedicada à programação, banco de dados e resolução de problemas.</li>
-                            <li>Aplicação de lógica e boas práticas no desenvolvimento de sistemas voltados a usuários reais.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-entry reveal">
-                    <div class="timeline-left">
-                        <p class="timeline-year">2 meses</p>
-                        <p class="timeline-institution">StudioMC<br>Guarulhos, SP</p>
-                    </div>
-                    <div>
-                        <h3 class="timeline-title">Estagiário — Logística</h3>
-                        <p class="timeline-sub">Estágio · 2 meses · Guarulhos, SP</p>
-                        <ul class="timeline-bullets">
-                            <li>Otimização de Fluxo: Estruturei do zero um sistema de organização logística com controle em planilhas digitais.</li>
-                            <li>Gestão de Estoque: Responsável pela conferência, controle de reposição e monitoramento rigoroso de validades.</li>
-                            <li>Liderança de Equipe: Coordenei atividades operacionais e direcionei tarefas de colaboradores do setor.</li>
-                            <li>Suporte Operacional: Manutenção da organização geral e apoio administrativo no controle de inventário.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-entry reveal">
-                    <div class="timeline-left">
-                        <p class="timeline-year">9 meses</p>
-                        <p class="timeline-institution">Promofarma<br>Guarulhos, SP</p>
-                    </div>
-                    <div>
-                        <h3 class="timeline-title">Jovem Aprendiz</h3>
-                        <p class="timeline-sub">Aprendizagem Profissional · 9 meses · Guarulhos, SP</p>
-                        <ul class="timeline-bullets">
-                            <li>Controle e reposição de estoque, garantindo disponibilidade dos produtos.</li>
-                            <li>Organização e padronização de gôndolas, melhorando a experiência do cliente.</li>
-                            <li>Verificação de validade e gestão de produtos próximos ao vencimento.</li>
-                            <li>Suporte operacional e manutenção da organização do setor.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="projetos">
-            <div class="section-header reveal">
-                <span class="section-num">05</span>
-                <h2 class="section-title">Projetos em Destaque</h2>
-            </div>
-            <div class="project-single reveal">
-                <div>
-                    <p class="project-tag">Estúdio Indie · Em desenvolvimento</p>
-                    <h3 class="project-title">Infortunio</h3>
-                    <p class="project-desc">Site oficial do primeiro jogo desenvolvido pelo nosso estúdio independente. Apresenta a narrativa, equipe de desenvolvimento e atualizações do projeto. Desenvolvido com Python/Flask e HTML/CSS puro, integrando o jogo em Unity.</p>
-                    <div class="project-techs">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">HTML / CSS</span>
-                        <span class="tech-tag">Unity Engine</span>
-                        <span class="tech-tag">C#</span>
-                    </div>
-                </div>
-                <a href="https://vanguardaprj.pythonanywhere.com" target="_blank" class="project-link">Ver site →</a>
-            </div>
-            <br>
-            <div class="project-single reveal">
-                <div>
-                    <p class="project-tag">Estagio Eniac · Em desenvolvimento</p>
-                    <h3 class="project-title">Evolua+</h3>
-                    <p class="project-desc">Participei do desenvolvimento do Evolua+, uma plataforma web em HTML, CSS, Node.js e MySQL voltada à saúde mental corporativa, que conecta colaboradores a psicólogos de forma segura e organizada. No sistema, o usuário passa por uma triagem com formulários e desafios reflexivos para gerar um perfil anônimo, permitindo que profissionais demonstrem interesse no atendimento e iniciem o acompanhamento custeado pela empresa. Além da conexão entre as partes, a solução conta com um sistema de validação e pontuação por tarefas, incentivando o engajamento dos funcionários e facilitando a gestão do bem-estar no ambiente de trabalho.</p>
-                    <div class="project-techs">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">HTML / CSS</span>
-                        <span class="tech-tag">XAMPP</span>
-                    </div>
-                </div>
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7447767486810472448/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFjRrPUBtN-xev0hVY07RDfky2w3O-JH9kE" target="_blank" class="project-link">Ver projeto →</a>
-            </div>
-            <br>
-            <div class="project-single reveal">
-                <div>
-                    <p class="project-tag">Cliente · No ar</p>
-                    <h3 class="project-title">JF Consultoria e Gestão</h3>
-                    <p class="project-desc">Desenvolvimento do site institucional da JF Consultoria e Gestão, apresentando os serviços, a área de atuação e os canais de contato da empresa. Site responsivo, com foco em clareza, navegação fluida e uma identidade visual profissional.</p>
-                    <div class="project-techs">
-                        <span class="tech-tag">HTML / CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Responsivo</span>
-                    </div>
-                </div>
-                <a href="https://jfconsultoriaegestao.com.br/" target="_blank" class="project-link">Ver site →</a>
-            </div>
-            <br>
-            <div class="project-single reveal">
-                <div>
-                    <p class="project-tag">Projeto pessoal · Sistema web</p>
-                    <h3 class="project-title">KorumHorus</h3>
-                    <p class="project-desc">Gerenciador de tarefas simples e direto, com três níveis de acesso — Administrador, Líder e Funcionário. Cada painel oferece permissões e visões distintas, permitindo distribuir, acompanhar e concluir tarefas de forma organizada dentro de uma equipe.</p>
-                    <div class="project-techs">
-                        <span class="tech-tag">HTML / CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Controle de acesso</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="contato">
-            <div class="section-header reveal">
-                <span class="section-num">06</span>
-                <h2 class="section-title">Contato</h2>
-            </div>
-            <div class="contact-grid reveal">
-                <div class="contact-item">
-                    <div>
-                        <p class="contact-label">E-mail</p>
-                        <p class="contact-value">lucasogomes2020@gmail.com</p>
-                    </div>
-                    <button class="copy-btn" data-text="lucasogomes2020@gmail.com">Copiar</button>
-                </div>
-                <div class="contact-item">
-                    <div>
-                        <p class="contact-label">WhatsApp</p>
-                        <p class="contact-value">+55 11 93250-9465</p>
-                    </div>
-                    <button class="copy-btn" data-text="+55 11 93250-9465">Copiar</button>
-                </div>
-            </div>
-            <div class="social-links reveal">
-                <a href="https://www.linkedin.com/in/lucas-oliveira-gomes-499063357" target="_blank" class="social-link">
-                    <div class="social-link-left">
-                        <span class="social-platform">LinkedIn</span>
-                        <span class="social-handle">lucas-oliveira-gomes</span>
-                    </div>
-                    <span class="social-arrow">↗</span>
-                </a>
-                <a href="https://github.com/LucasOG2008" target="_blank" class="social-link">
-                    <div class="social-link-left">
-                        <span class="social-platform">GitHub</span>
-                        <span class="social-handle">LucasOG2008</span>
-                    </div>
-                    <span class="social-arrow">↗</span>
-                </a>
-                <a href="https://www.instagram.com/lucasgomes2008" target="_blank" class="social-link">
-                    <div class="social-link-left">
-                        <span class="social-platform">Instagram</span>
-                        <span class="social-handle">@lucasgomes2008</span>
-                    </div>
-                    <span class="social-arrow">↗</span>
-                </a>
-            </div>
-
-            <div class="contact-form-wrap reveal">
-                <h3 class="contact-form-title">Envie uma mensagem</h3>
-                <p class="contact-form-subtitle">Responderei em até 24 horas · direto no seu e-mail</p>
-                <form id="contactForm" novalidate>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label class="form-label" for="from_name">Nome completo</label>
-                            <input class="form-input" type="text" id="from_name" name="from_name" placeholder="Seu nome" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="from_email">E-mail</label>
-                            <input class="form-input" type="email" id="from_email" name="from_email" placeholder="seu@email.com" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="subject">Assunto</label>
-                        <input class="form-input" type="text" id="subject" name="subject" placeholder="Ex: Proposta de estágio, Parceria..." required>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="message">Mensagem</label>
-                        <textarea class="form-textarea" id="message" name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
-                    </div>
-                    <div class="form-bottom">
-                        <span class="form-note">Seus dados não serão compartilhados.</span>
-                        <button type="submit" class="form-submit" id="submitBtn">
-                            <div class="spinner"></div>
-                            <span class="btn-text">Enviar mensagem →</span>
-                        </button>
-                    </div>
-                </form>
-                <div class="form-feedback" id="formFeedback"></div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="footer-main">
-            <div>
-                <span class="footer-brand-name">Lucas Oliveira Gomes</span>
-                <span class="footer-brand-tagline">
-                    Desenvolvedor em Formação<br>
-                    Guarulhos, SP · Brasil
-                </span>
-                <span class="footer-kanji">開発者</span>
-            </div>
-            <div>
-                <p class="footer-col-title">Navegação</p>
-                <ul class="footer-links">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#formacao">Formação</a></li>
-                    <li><a href="#experiencia">Experiência</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </div>
-            <div>
-                <p class="footer-col-title">Contato</p>
-                <div class="footer-contact-item">
-                    <p class="footer-contact-label">E-mail</p>
-                    <p class="footer-contact-val">lucasogomes2020@gmail.com</p>
-                </div>
-                <div class="footer-contact-item">
-                    <p class="footer-contact-label">WhatsApp</p>
-                    <p class="footer-contact-val">+55 11 93250-9465</p>
-                </div>
-                <div class="footer-contact-item">
-                    <p class="footer-contact-label">GitHub</p>
-                    <p class="footer-contact-val">LucasOG2008</p>
-                </div>
-            </div>
+          <article class="client" id="cartao" aria-labelledby="cartao-t">
+            <figure class="client-pic" data-reveal>
+              <img src="media/cartao-medalhas.jpg" width="880" height="660" loading="lazy" alt="Três medalhas em 3D, de bronze, prata e ouro, sob uma luz dourada">
+            </figure>
+            <h3 id="cartao-t" class="client-title" data-reveal>Cartão de tempo de casa</h3>
+            <p class="client-lead" data-reveal>Página de reconhecimento para um colaborador que completou um ano de empresa: medalhas em 3D por nível, tema metálico e galeria de momentos. HTML, CSS, JavaScript e three.js.</p>
+          </article>
         </div>
-        <div class="footer-bottom">
-            <span class="footer-copy">© 2026 Lucas Oliveira Gomes · Todos os direitos reservados</span>
-            <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/lucas-oliveira-gomes-499063357" target="_blank">LinkedIn</a>
-                <a href="https://github.com/LucasOG2008" target="_blank">GitHub</a>
-                <a href="https://www.instagram.com/lucasgomes2008" target="_blank">Instagram</a>
-            </div>
-            <span class="footer-made">Feito com HTML · CSS · JS</span>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="about" id="sobre" aria-labelledby="sobre-title">
+      <figure class="about-pic">
+        <img src="media/red-fuji.jpg" width="1600" height="1084" loading="lazy" alt="Gravura de Hokusai: o Monte Fuji vermelho sob um céu de nuvens pequenas">
+        <figcaption>Hokusai, Vento suave, manhã clara, cerca de 1830.</figcaption>
+      </figure>
+      <div class="letter">
+        <h2 id="sobre-title" class="head" data-reveal>Sobre mim</h2>
+        <p data-reveal>Comecei a programar no ensino médio técnico em Desenvolvimento de Sistemas, onde fui eleito líder do projeto de TCC da turma. Hoje curso Ciência da Computação no ENIAC.</p>
+        <p data-reveal>Gosto de construir a coisa inteira: a tabela no banco, a rota da API, a tela, e o teste que prova que funciona. O ASGARD e o VIGIA nasceram assim, de problemas reais que eu queria resolver.</p>
+        <p data-reveal>Antes da programação trabalhei com estoque e logística, e foi lá que aprendi <mark>organização, disciplina e a liderar uma equipe no dia a dia</mark>. Levo isso para o código.</p>
+        <p data-reveal>Hoje trabalho como analista de sistemas na JF Consultoria, das 8h às 16h. Desenvolvo a central de gestão da empresa e mantenho os sistemas de folha de pagamento e de recrutamento da Contacta.</p>
+        <p class="sign" data-reveal>Lucas Oliveira Gomes<span>Guarulhos, SP</span></p>
+        <dl class="about-facts" data-reveal>
+          <div><dt>Local</dt><dd>Gopoúva, Guarulhos</dd></div>
+          <div><dt>Trabalho</dt><dd>JF Consultoria, 8h às 16h</dd></div>
+          <div><dt>Idiomas</dt><dd>Português, inglês básico</dd></div>
+          <div><dt>GitHub</dt><dd><a href="https://github.com/LucasOG2008" target="_blank" rel="noopener">LucasOG2008</a></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ FERRAMENTAS (folha impressa) ============ -->
+    <section class="tools" id="ferramentas" aria-labelledby="tools-title">
+      <div class="tools-head">
+        <h2 id="tools-title" class="head" data-reveal>Ferramentas</h2>
+        <p class="tools-note" data-reveal>Cada uma com os projetos onde a usei de verdade.</p>
+        <p class="tools-soft" data-reveal>Comunicação clara, trabalho em equipe, comprometimento, raciocínio lógico e liderança.</p>
+      </div>
+      <div class="tools-index">
+        <div class="tools-group" data-reveal>
+          <h3>Linguagens</h3>
+          <ul role="list">
+            <li><span class="tool">JavaScript</span><span class="where">JF Central, ASGARD, Evolua+, sites</span></li>
+            <li><span class="tool">Python</span><span class="where">ASGARD, VIGIA</span></li>
+            <li><span class="tool">PHP</span><span class="where">JF Central, Cofre de Acessos</span></li>
+            <li><span class="tool">TypeScript</span><span class="where">VIGIA</span></li>
+            <li><span class="tool">SQL</span><span class="where">Todos os sistemas</span></li>
+            <li><span class="tool">HTML e CSS</span><span class="where">Todos os projetos</span></li>
+            <li><span class="tool">C#</span><span class="where">Curso de Unity no SENAC</span></li>
+          </ul>
         </div>
-    </footer>
+        <div class="tools-group" data-reveal>
+          <h3>Back-end e dados</h3>
+          <ul role="list">
+            <li><span class="tool">FastAPI</span><span class="where">ASGARD, VIGIA</span></li>
+            <li><span class="tool">PostgreSQL</span><span class="where">ASGARD, VIGIA, Cofre</span></li>
+            <li><span class="tool">MySQL</span><span class="where">JF Central, Evolua+</span></li>
+            <li><span class="tool">Supabase</span><span class="where">Sistemas Contacta, VIGIA</span></li>
+            <li><span class="tool">SQLAlchemy e Alembic</span><span class="where">VIGIA</span></li>
+            <li><span class="tool">pytest</span><span class="where">ASGARD, VIGIA</span></li>
+          </ul>
+        </div>
+        <div class="tools-group" data-reveal>
+          <h3>Interface</h3>
+          <ul role="list">
+            <li><span class="tool">React</span><span class="where">Sistemas Contacta, VIGIA</span></li>
+            <li><span class="tool">Tailwind CSS</span><span class="where">Sistemas Contacta, VIGIA</span></li>
+            <li><span class="tool">Vite</span><span class="where">Sistemas Contacta, VIGIA</span></li>
+            <li><span class="tool">three.js</span><span class="where">Cartão de tempo de casa</span></li>
+          </ul>
+        </div>
+        <div class="tools-group" data-reveal>
+          <h3>IA e ferramentas</h3>
+          <ul role="list">
+            <li><span class="tool">Ollama</span><span class="where">ASGARD, VIGIA</span></li>
+            <li><span class="tool">Claude Code</span><span class="where">ASGARD</span></li>
+            <li><span class="tool">Node.js</span><span class="where">Evolua+</span></li>
+            <li><span class="tool">Git</span><span class="where">Projetos pessoais</span></li>
+            <li><span class="tool">Excel</span><span class="where">Logística na StudioMC</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <a href="#" class="scroll-top" id="scrollTop" aria-label="Voltar ao topo">↑</a>
+    <!-- ============ TRAJETÓRIA ============ -->
+    <section class="path" id="trajetoria" aria-labelledby="path-title">
+      <h2 id="path-title" class="head" data-reveal>Trajetória</h2>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <!-- Motion libs (21st.dev-style fluidity): GSAP + ScrollTrigger + Lenis smooth scroll -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
-    <script src="script.js"></script>
+      <div class="path-group">
+        <h3 class="path-label" data-reveal>Experiência</h3>
+        <ol class="path-list" role="list">
+          <li data-reveal>
+            <p class="path-when">Desde jul. 2026<span>JF Consultoria Gestão Empresarial</span></p>
+            <div>
+              <h4>Analista de sistemas</h4>
+              <p>Tempo integral, das 8h às 16h. Desenvolvo a JF Central de Gestão e cuido da manutenção dos sistemas de folha de pagamento e de recrutamento e seleção da Contacta.</p>
+            </div>
+          </li>
+          <li data-reveal>
+            <p class="path-when">jun. a jul. 2026<span>JF Consultoria, São Paulo</span></p>
+            <div>
+              <h4>Desenvolvedor front-end, estágio</h4>
+              <p>Estágio presencial com HTML e CSS.</p>
+            </div>
+          </li>
+          <li data-reveal>
+            <p class="path-when">5 meses<span>ENIAC, Guarulhos</span></p>
+            <div>
+              <h4>Estagiário de desenvolvimento</h4>
+              <p>Construção de plataformas reais como o Evolua+, com HTML, CSS, JavaScript, Node.js e MySQL, em equipe com outros estagiários, três horas por dia dedicadas a programação e banco de dados.</p>
+            </div>
+          </li>
+          <li data-reveal>
+            <p class="path-when">2 meses<span>StudioMC, Guarulhos</span></p>
+            <div>
+              <h4>Estagiário de logística</h4>
+              <p>Estruturei do zero um sistema de organização logística em planilhas, cuidei da conferência e reposição de estoque com controle de validades e coordenei as tarefas da equipe do setor.</p>
+            </div>
+          </li>
+          <li data-reveal>
+            <p class="path-when">9 meses<span>Promofarma, Guarulhos</span></p>
+            <div>
+              <h4>Jovem aprendiz</h4>
+              <p>Controle e reposição de estoque, padronização de gôndolas, gestão de produtos próximos ao vencimento e suporte operacional ao setor.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="path-group">
+        <h3 class="path-label" data-reveal>Formação</h3>
+        <ol class="path-list" role="list">
+          <li data-reveal>
+            <p class="path-when">Em andamento<span>Centro Universitário ENIAC</span></p>
+            <div>
+              <h4>Bacharelado em Ciência da Computação</h4>
+              <p>Algoritmos, estruturas de dados, engenharia de software e desenvolvimento de sistemas.</p>
+            </div>
+          </li>
+          <li data-reveal>
+            <p class="path-when">Concluído<span>E.E. Frederico de Barros Brotero</span></p>
+            <div>
+              <h4>Técnico em Desenvolvimento de Sistemas</h4>
+              <p>Programação, banco de dados, desenvolvimento web e lógica. Líder do projeto de TCC da turma.</p>
+            </div>
+          </li>
+          <li data-reveal>
+            <p class="path-when">Concluído<span>SENAC</span></p>
+            <div>
+              <h4>Desenvolvimento de jogos com Unity</h4>
+              <p>Jogos 2D e 3D com Unity e C#, programação orientada a componentes e game design.</p>
+            </div>
+          </li>
+          <li data-reveal>
+            <p class="path-when">Concluído<span>Bradesco</span></p>
+            <div>
+              <h4>Office na prática</h4>
+              <p>Word, Excel e apresentações profissionais.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="contact" id="contato" aria-labelledby="contato-title">
+      <img class="contact-photo" src="media/ponte-guarulhos.jpg" width="1600" height="1200" loading="lazy" alt="Ponte estaiada com o mastro Cidade de Guarulhos sobre a Via Dutra">
+      <div class="card">
+        <h2 id="contato-title" class="head">Vamos conversar</h2>
+        <p class="card-lead">Respondo em até 24 horas.</p>
+        <ul class="card-lines" role="list">
+          <li>
+            <a href="mailto:lucasogomes2020@gmail.com">lucasogomes2020@gmail.com</a>
+            <button class="copy" type="button" data-copy="lucasogomes2020@gmail.com" aria-label="Copiar e-mail">Copiar</button>
+          </li>
+          <li>
+            <a href="https://wa.me/5511932509465" target="_blank" rel="noopener">+55 11 93250-9465</a>
+            <button class="copy" type="button" data-copy="+55 11 93250-9465" aria-label="Copiar WhatsApp">Copiar</button>
+          </li>
+        </ul>
+        <form id="contactForm" class="form" novalidate>
+          <label for="from_name">Nome</label>
+          <input id="from_name" name="from_name" type="text" autocomplete="name" required>
+          <label for="from_email">E-mail</label>
+          <input id="from_email" name="from_email" type="email" autocomplete="email" required>
+          <label for="subject">Assunto</label>
+          <input id="subject" name="subject" type="text" placeholder="Proposta de estágio" required>
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <p class="form-error" id="formError" role="alert"></p>
+          <button class="btn btn-block" type="submit" id="submitBtn"><span class="btn-label">Enviar mensagem</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="foot">
+    <figure class="foot-pic">
+      <img src="media/great-wave.jpg" width="1600" height="1076" loading="lazy" alt="Gravura de Hokusai: a grande onda de Kanagawa com o Monte Fuji ao fundo">
+    </figure>
+    <div class="foot-side">
+      <a class="wordmark" href="#topo"><span class="mark" aria-hidden="true">開</span><span>Lucas Oliveira Gomes</span></a>
+      <nav class="foot-menu" aria-label="Rodapé">
+        <a href="#projetos">Projetos</a>
+          <a href="#sobre">Sobre</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="foot-blocks">
+        <p>lucasogomes2020@gmail.com<br>+55 11 93250-9465</p>
+        <p>
+          <a href="https://www.linkedin.com/in/lucas-oliveira-gomes-499063357" target="_blank" rel="noopener">LinkedIn</a><br>
+          <a href="https://github.com/LucasOG2008" target="_blank" rel="noopener">GitHub</a><br>
+          <a href="https://www.instagram.com/lucasgomes2008" target="_blank" rel="noopener">Instagram</a>
+        </p>
+      </div>
+      <p class="foot-legal">© <span id="year">2026</span> Lucas Oliveira Gomes. Gravuras de Katsushika Hokusai (domínio público, via Wikimedia Commons). Ponte de Guarulhos por Bruno Rios Evangelista (CC0, via Wikimedia Commons). Medalhas 3D do cartão de tempo de casa baseadas em Marksman Medals, de Luna Wallenstein (CC BY 4.0, via Sketchfab).</p>
+    </div>
+  </footer>
+
+  <div class="toaster" id="toaster" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
